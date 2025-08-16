@@ -97,13 +97,3 @@ Untuk menjalankan proyek ini di lingkungan lokal, Anda perlu menyiapkan database
     Aplikasi akan terbuka secara otomatis di browser pada `http://localhost:5173`.
 
 ---
-
-## 📂 Struktur Folder (Sederhana)
-
-/proyek-manajemen-aset (Root Repositori)
-├── MANAJEMEN-ASET/             # Folder Frontend (React) & Backend
-│   ├── backend-manajemen-aset/ #   -> Kode Backend (Node.js) ada di sini
-│   └── src/                    #   -> Kode Frontend (React) ada di sini
-│
-├── database_schema.sql         # Skema struktur database
-└── README.md
