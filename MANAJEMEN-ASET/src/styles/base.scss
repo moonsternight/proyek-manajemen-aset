@@ -1,0 +1,85 @@
+@import "_variables";
+
+/* --- CSS Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Base Body Styles --- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  min-height: 100vh;
+  color: $text-color;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Main Container --- */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: $spacing-md;
+}
+
+/* --- General Button Styles --- */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all $transition-speed $transition-ease;
+}
+
+/* --- Basic Form Elements --- */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  font-family: inherit;
+  font-size: $font-size-md;
+  padding: $spacing-sm;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-sm;
+  background-color: $off-white;
+  transition: border-color $transition-speed $transition-ease,
+    box-shadow $transition-speed $transition-ease;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+  }
+}
+
+/* --- Link Styles --- */
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* --- Utility Classes --- */
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.margin-top-md {
+  margin-top: $spacing-md;
+}
+.margin-bottom-md {
+  margin-bottom: $spacing-md;
+}
+.read-only {
+  background-color: $read-only-bg !important;
+  cursor: not-allowed !important;
+  opacity: 0.8;
+}
